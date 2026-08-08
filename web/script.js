@@ -10,7 +10,7 @@ async function loadData() {
     try {
 
         const response = await fetch(
-            "../data/frontend_data.json"
+            "frontend_data.json"
         );
 
         apps = await response.json();
