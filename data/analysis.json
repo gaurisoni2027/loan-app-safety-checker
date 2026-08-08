@@ -1,0 +1,289 @@
+[
+    {
+        "app_id": "com.balancehero.truebalance",
+        "app_name": "True Balance - Loan App & UPI",
+        "developer": "True Balance - Balance Hero",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 23,
+            "neutral": 7,
+            "negative": 0
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "com.branch_international.branch.branch_demo_android",
+        "app_name": "Branch Instant Personal Loan",
+        "developer": "Branch International Financial Services Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 18,
+            "neutral": 7,
+            "negative": 5
+        },
+        "complaints": {
+            "hidden_fees": 1,
+            "fraud": 1,
+            "repayment": 1
+        }
+    },
+    {
+        "app_id": "com.buddyloan.vls",
+        "app_name": "Buddy Loan - Personal Loan App",
+        "developer": "Bvalue Services PVT LTD",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 7,
+            "neutral": 5,
+            "negative": 18
+        },
+        "complaints": {
+            "privacy": 5,
+            "fraud": 9,
+            "hidden_fees": 2,
+            "repayment": 3
+        }
+    },
+    {
+        "app_id": "com.earlysalary.android",
+        "app_name": "Personal Loan App by Fibe",
+        "developer": "Social Worth Technologies Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 26,
+            "neutral": 3,
+            "negative": 1
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "com.fastbanking",
+        "app_name": "Kissht: Instant Personal Loans",
+        "developer": "OnEMI Technology Solutions Limited.",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 29,
+            "neutral": 1,
+            "negative": 0
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "com.fatakpay",
+        "app_name": "FatakPay: Loans & Investments",
+        "developer": "FatakPay: Personal Loan, Insurance, Credit Score",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 25,
+            "neutral": 5,
+            "negative": 0
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "com.ideopay.user",
+        "app_name": "RING by Kissht: Personal Loan",
+        "developer": "OnEMI Technology Solutions Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 27,
+            "neutral": 3,
+            "negative": 0
+        },
+        "complaints": {
+            "hidden_fees": 1,
+            "repayment": 2
+        }
+    },
+    {
+        "app_id": "com.kreditbee.android",
+        "app_name": "KreditBee: Personal Loans, UPI",
+        "developer": "Finnovation Tech Solutions Pvt Ltd",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 26,
+            "neutral": 2,
+            "negative": 2
+        },
+        "complaints": {
+            "hidden_fees": 1,
+            "repayment": 1
+        }
+    },
+    {
+        "app_id": "com.mobikwik_new",
+        "app_name": "MobiKwik: Loans, UPI & Wallet",
+        "developer": "One MobiKwik Systems Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 21,
+            "neutral": 4,
+            "negative": 5
+        },
+        "complaints": {
+            "fraud": 2,
+            "repayment": 1
+        }
+    },
+    {
+        "app_id": "com.mpokket.app",
+        "app_name": "mPokket: Instant Loan App",
+        "developer": "Maybright Ventures Private Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 21,
+            "neutral": 2,
+            "negative": 7
+        },
+        "complaints": {
+            "repayment": 3,
+            "fraud": 1
+        }
+    },
+    {
+        "app_id": "com.myairtelapp",
+        "app_name": "Airtel: Recharge, Bank & Loans",
+        "developer": "Airtel",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 8,
+            "neutral": 7,
+            "negative": 15
+        },
+        "complaints": {
+            "privacy": 1,
+            "fraud": 2,
+            "repayment": 2
+        }
+    },
+    {
+        "app_id": "com.naviapp",
+        "app_name": "Navi: UPI, Payments, Insurance",
+        "developer": "Navi",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 21,
+            "neutral": 9,
+            "negative": 0
+        },
+        "complaints": {
+            "repayment": 1
+        }
+    },
+    {
+        "app_id": "com.phonepe.app",
+        "app_name": "PhonePe UPI Payments, Loan App",
+        "developer": "PhonePe",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 24,
+            "neutral": 6,
+            "negative": 0
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "com.pocketly",
+        "app_name": "Pocketly Instant Personal Loan",
+        "developer": "Speel Finance Company Private Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 25,
+            "neutral": 3,
+            "negative": 2
+        },
+        "complaints": {
+            "repayment": 2,
+            "privacy": 1,
+            "hidden_fees": 1,
+            "fraud": 1
+        }
+    },
+    {
+        "app_id": "com.rupeeredee.app",
+        "app_name": "RupeeRedee - Personal Loan App",
+        "developer": "Moneymitra IT Solution Private limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 23,
+            "neutral": 2,
+            "negative": 5
+        },
+        "complaints": {
+            "fraud": 1,
+            "hidden_fees": 1,
+            "repayment": 2
+        }
+    },
+    {
+        "app_id": "com.whizdm.moneyview.loans",
+        "app_name": "Moneyview: UPI, Personal Loans",
+        "developer": "Moneyview",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 25,
+            "neutral": 4,
+            "negative": 1
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "in.hanafintech",
+        "app_name": "PayRupik Instant Personal Loan",
+        "developer": "Sayyam Investments Pvt Ltd",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 20,
+            "neutral": 6,
+            "negative": 4
+        },
+        "complaints": {
+            "hidden_fees": 2,
+            "privacy": 1,
+            "fraud": 1
+        }
+    },
+    {
+        "app_id": "in.rebase.app",
+        "app_name": "Olyv: Loans & Credit Score",
+        "developer": "Olyv (Formerly SmartCoin)",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 25,
+            "neutral": 1,
+            "negative": 4
+        },
+        "complaints": {
+            "fraud": 2,
+            "privacy": 1,
+            "repayment": 1
+        }
+    },
+    {
+        "app_id": "net.one97.paytm",
+        "app_name": "Paytm: Secure UPI Payments",
+        "developer": "Paytm - One97 Communications Ltd.",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 20,
+            "neutral": 6,
+            "negative": 4
+        },
+        "complaints": {}
+    },
+    {
+        "app_id": "org.altruist.BajajExperia",
+        "app_name": "Bajaj Finance : UPI & Loan App",
+        "developer": "Bajaj Finance Limited",
+        "total_reviews": 30,
+        "sentiment": {
+            "positive": 24,
+            "neutral": 3,
+            "negative": 3
+        },
+        "complaints": {
+            "fraud": 1,
+            "repayment": 1
+        }
+    }
+]

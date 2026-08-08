@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>LoanGuard — Loan App Risk Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">LG</div>
+
+            <div>
+                <h1>LoanGuard</h1>
+                <span>Risk Intelligence</span>
+            </div>
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active">
+                <span>◈</span>
+                Overview
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⌁</span>
+                App Intelligence
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◉</span>
+                Evidence
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <span class="status-dot"></span>
+
+            <div>
+                <strong>Analysis Engine</strong>
+                <small>20 apps processed</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    LOAN APP SAFETY INTELLIGENCE
+                </p>
+
+                <h2>
+                    Know the risk
+                    <span>before you borrow.</span>
+                </h2>
+
+                <p class="subtitle">
+                    Evidence-driven analysis combining Play Store
+                    signals, review intelligence, web research
+                    and Gemini.
+                </p>
+
+            </div>
+
+
+            <div class="header-status">
+
+                <span class="status-dot"></span>
+
+                Analysis updated
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             OVERVIEW METRICS
+        ========================== -->
+
+        <section class="metrics">
+
+            <div class="metric-card primary">
+
+                <span class="metric-label">
+                    APPS ANALYZED
+                </span>
+
+                <strong id="totalApps">
+                    20
+                </strong>
+
+                <span class="metric-description">
+                    Across the Indian Play Store
+                </span>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span class="metric-label">
+                    HIGH RISK
+                </span>
+
+                <strong id="highRisk">
+                    —
+                </strong>
+
+                <span class="metric-description">
+                    Requires closer attention
+                </span>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span class="metric-label">
+                    CAUTION
+                </span>
+
+                <strong id="cautionRisk">
+                    —
+                </strong>
+
+                <span class="metric-description">
+                    Mixed risk signals
+                </span>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span class="metric-label">
+                    REVIEWS ANALYZED
+                </span>
+
+                <strong id="totalReviews">
+                    600
+                </strong>
+
+                <span class="metric-description">
+                    Sentiment + complaint signals
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RISK OVERVIEW
+        ========================== -->
+
+        <section class="intelligence-panel">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        RISK LANDSCAPE
+                    </span>
+
+                    <h3>
+                        Where attention is needed
+                    </h3>
+                </div>
+
+                <span class="analysis-tag">
+                    AI + RULE ENGINE
+                </span>
+
+            </div>
+
+
+            <div
+                class="risk-distribution"
+                id="riskDistribution"
+            >
+
+                <!-- JS will populate this -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             APP EXPLORER
+        ========================== -->
+
+        <section class="app-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        APP EXPLORER
+                    </span>
+
+                    <h3>
+                        Investigate an app
+                    </h3>
+
+                </div>
+
+                <div class="filters">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search loan apps..."
+                    >
+
+                    <button
+                        class="filter active"
+                        data-filter="ALL"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="HIGH RISK"
+                    >
+                        High
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="CAUTION"
+                    >
+                        Caution
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="LOW RISK"
+                    >
+                        Lower
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="app-grid"
+                id="appGrid"
+            >
+
+                <!-- JS will populate app cards -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DETAIL DRAWER
+        ========================== -->
+
+        <div
+            class="detail-overlay"
+            id="detailOverlay"
+        >
+
+            <div class="detail-drawer">
+
+                <button
+                    class="close-button"
+                    id="closeDrawer"
+                >
+                    ×
+                </button>
+
+
+                <div id="detailContent">
+
+                    <!-- JS will populate -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
