@@ -2,6 +2,158 @@ let apps = [];
 let currentFilter = "ALL";
 
 
+
+// =========================
+// SIDEBAR NAVIGATION
+// =========================
+
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach(item => {
+
+    item.addEventListener("click", event => {
+
+        event.preventDefault();
+
+        navItems.forEach(nav =>
+            nav.classList.remove("active")
+        );
+
+        item.classList.add("active");
+
+        const targetId =
+            item.getAttribute("href");
+
+        const target =
+            document.querySelector(targetId);
+
+        if (target) {
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+
+});
+
+// =========================
+// EVIDENCE SECTION
+// =========================
+
+function renderEvidence(app) {
+
+    const store = document.getElementById("storeEvidence");
+    const reviews = document.getElementById("reviewEvidence");
+    const web = document.getElementById("webEvidence");
+    const ai = document.getElementById("aiEvidence");
+
+    if (!app) {
+        return;
+    }
+
+    // Play Store signals
+    store.innerHTML = `
+        <div class="evidence-item">
+            Developer: ${app.developer || "Not available"}
+        </div>
+
+        <div class="evidence-item">
+            Rating: ${app.score ?? "N/A"}
+        </div>
+
+        <div class="evidence-item">
+            Reviews: ${app.reviews ?? "N/A"}
+        </div>
+
+        <div class="evidence-item">
+            Installs: ${app.installs ?? "N/A"}
+        </div>
+    `;
+
+
+    // Review intelligence
+    const sentiment = app.sentiment || {};
+
+    reviews.innerHTML = `
+        <div class="evidence-item">
+            Positive: ${sentiment.positive || 0}
+        </div>
+
+        <div class="evidence-item">
+            Neutral: ${sentiment.neutral || 0}
+        </div>
+
+        <div class="evidence-item">
+            Negative: ${sentiment.negative || 0}
+        </div>
+
+        <div class="evidence-item">
+            ${app.risk_factors?.length || 0}
+            risk signals detected
+        </div>
+    `;
+
+
+    // Web research
+    const sources = app.web_evidence || [];
+
+    web.innerHTML = sources.length
+        ? sources.slice(0, 3).map(source => `
+            <div class="evidence-item">
+                <strong>
+                    ${source.title || "External source"}
+                </strong>
+
+                <div class="evidence-source">
+                    ${
+                        source.url
+                        ? `<a href="${source.url}"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              View source →
+                           </a>`
+                        : ""
+                    }
+                </div>
+            </div>
+        `).join("")
+        : `
+            <div class="evidence-muted">
+                No external evidence available.
+            </div>
+        `;
+
+
+    // AI assessment
+    const llm = app.llm || {};
+
+    ai.innerHTML = `
+        <div class="evidence-item">
+            Verdict:
+            <strong>
+                ${llm.verdict || app.risk_level || "N/A"}
+            </strong>
+        </div>
+
+        <div class="evidence-item">
+            Confidence:
+            ${
+                llm.confidence !== undefined
+                ? Math.round(llm.confidence * 100) + "%"
+                : "N/A"
+            }
+        </div>
+
+        <div class="evidence-item">
+            ${llm.summary || "No AI assessment available."}
+        </div>
+    `;
+}
+
 // =========================
 // LOAD DATA
 // =========================
@@ -725,6 +877,7 @@ function openDetails(app) {
 
 
     overlay.classList.add("open");
+    renderEvidence(app);
 }
 
 

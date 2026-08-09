@@ -735,3 +735,69 @@ body {
     }
 
 }
+html {
+    scroll-behavior: smooth;
+}
+
+#overview,
+#app-intelligence,
+#evidence {
+    scroll-margin-top: 30px;
+}
+
+/* =========================
+   EVIDENCE SECTION
+========================= */
+
+.evidence-section {
+    margin-top: 70px;
+    padding-bottom: 80px;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.evidence-card {
+    background: #101217;
+    border: 1px solid #242833;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 150px;
+}
+
+.evidence-card .section-kicker {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.evidence-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #20242c;
+    color: #c7cad0;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.evidence-item:last-child {
+    border-bottom: none;
+}
+
+.evidence-muted {
+    color: #8b909c;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.evidence-source {
+    margin-top: 8px;
+}
+
+.evidence-source a {
+    color: #b7f34a;
+    text-decoration: none;
+    font-size: 10px;
+}
